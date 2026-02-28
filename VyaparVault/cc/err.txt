@@ -1,0 +1,67 @@
+Error Codes
+Error Code	Short Message	Long Message	Correcting this Error
+10002	Authentication Failed	Merchant Authentication failed	This error can be caused by an incorrect merchant ID, an incorrect access code, or if the order originates from an unregistered URL. Make sure that all three of these values are correct. For your security, CCAvenue does not report exactly which of these three values might be in error.
+10003	No Payment Option	No Payment Option	Ensure that merchant has payment options are allocated for completing transaction
+10004	UPI Payment option having Amt greater than Rs. 100000	Amount exceeds allowed limit of Rs. 100000 for this payment option.	Ensure that transaction amount for UPI payment option is not greater than threshold limit which is currently set to Rs.100000
+21001	Missing Parameter	order_id:Required parameter missing	Ensure that the order_id parameter is not blank.
+21002	Missing Parameter	currency: Required paramter missing	Ensure that the currency parameter is not blank.
+21003	Missing Parameter	amount:Required parameter missing	Ensure that the amount parameter is not blank.
+21004	Missing Parameter	billing_name: Required parameter missing	Ensure that the billing_name parameter is not blank.
+21005	Missing Parameter	billing_address: Required parameter missing	Ensure that the billing_address parameter is not blank.
+21006	Missing Parameter	billing_city: Required parameter missing	Ensure that the billing_city parameter is not blank.
+21007	Missing Parameter	billing_state: Required parameter missing	Ensure that the billing_state parameter is not blank.
+21008	Missing Parameter	billing_zip: Required parameter missing	Ensure that the billing_zip parameter is not blank.
+21009	Missing Parameter	billing_country: Required parameter missing	Ensure that the billing_country parameter is not blank.
+21010	Missing Parameter	billing_tel: Required parameter missing	Ensure that the billing_tel parameter is not blank.
+21011	Missing Parameter	billing_email: Required parameter missing	Ensure that the billing_email parameter is not blank.
+21012	Missing Parameter	delivery_name: Required parameter missing	Ensure that the delivery_name parameter is not blank.
+21013	Missing Parameter	delivery_address: Required parameter missing	Ensure that the delivery_address parameter is not blank.
+21014	Missing Parameter	delivery_city: Required parameter missing	Ensure that the billing_city parameter is not blank.
+21015	Missing Parameter	delivery_state: Required parameter missing	Ensure that the delivery_state parameter is not blank.
+21016	Missing Parameter	delivery_zip: Required parameter missing	Ensure that the delivery_zip parameter is not blank.
+21017	Missing Parameter	delivery_country: Required parameter missing	Ensure that the delivery_country parameter is not blank.
+21018	Missing Parameter	delivery_tel: Required parameter missing	Ensure that the delivery_tel parameter is not blank.
+21020	Missing Parameter	card_name: Required parameter missing	Ensure that the card_name parameter is not blank.
+21021	Missing Parameter	card_type: Required parameter missing	Ensure that the card_type parameter is not blank.
+21022	Missing Parameter	payment_option: Required parameter missing	Ensure that the payment_option parameter is not blank.
+21023	Missing Parameter	card_number: Required parameter missing	Ensure that the card_number parameter is not blank.
+21024	Missing Parameter	expiry_month: Required parameter missing	Ensure that the expiry_month parameter is not blank.
+21025	Missing Parameter	expiry_year: Required parameter missing	Ensure that the expiry_year parameter is not blank.
+21026	Missing Parameter	cvv_number: Required parameter missing	Ensure that the cvv_number parameter is not blank.
+21027	Missing Parameter	issuing_bank: Required parameter missing	Ensure that the issuing_bank parameter is not blank.
+21028	Missing Parameter	emi_plan_id: Required parameter missing	Ensure that the emi_plan_id parameter is not blank.
+21029	Missing Parameter	emi_tenure_id: Required parameter missing	Ensure that the emi_tenure_id parameter is not blank.
+21031	Missing Parameter	mm_id: Required parameter missing	Ensure that the mmid parameter is not blank.
+21032	Missing Parameter	otp: Required parameter missing	Ensure that the otp parameter is not blank.
+31001	Invalid Parameter	order_id:Invalid Parameter	Ensure that the order_id parameter is not Invalid.
+31002	Invalid Parameter	currency: Invalid Parameter	Ensure that the currency parameter is not Invalid.
+31003	Invalid Parameter	amount:Invalid Parameter	Ensure that the amount parameter is not Invalid.
+31004	Invalid Parameter	billing_name: Invalid Parameter	Ensure that the billing_name parameter is not Invalid.
+31005	Invalid Parameter	billing_address: Invalid Parameter	Ensure that the billing_address parameter is not Invalid.
+31006	Invalid Parameter	billing_city: Invalid Parameter	Ensure that the billing_city parameter is not Invalid.
+31007	Invalid Parameter	billing_state: Invalid Parameter	Ensure that the billing_state parameter is not Invalid.
+31008	Invalid Parameter	billing_zip: Invalid Parameter	Ensure that the billing_zip parameter is not Invalid.
+31009	Invalid Parameter	billing_country: Invalid Parameter	Ensure that the billing_country parameter is not Invalid.
+31010	Invalid Parameter	billing_tel: Invalid Parameter	Ensure that the billing_tel parameter is not Invalid.
+31011	Invalid Parameter	billing_email: Invalid Parameter	Ensure that the billing_email parameter is not Invalid.
+31012	Invalid Parameter	delivery_name: Invalid Parameter	Ensure that the delivery_name parameter is not Invalid.
+31013	Invalid Parameter	delivery_address: Invalid Parameter	Ensure that the delivery_address parameter is not Invalid.
+31014	Invalid Parameter	delivery_city: Invalid Parameter	Ensure that the billing_city parameter is not Invalid.
+31015	Invalid Parameter	delivery_state: Invalid Parameter	Ensure that the delivery_state parameter is not Invalid.
+31016	Invalid Parameter	delivery_zip: Invalid Parameter	Ensure that the delivery_zip parameter is not Invalid.
+31017	Invalid Parameter	delivery_country: Invalid Parameter	Ensure that the delivery_country parameter is not Invalid.
+31018	Invalid Parameter	delivery_tel: Invalid Parameter	Ensure that the delivery_tel parameter is not Invalid.
+31020	Invalid Parameter	card_name: Invalid Parameter	Ensure that the card_name parameter is not Invalid.
+31021	Invalid Parameter	card_type: Invalid Parameter	Ensure that the card_type parameter is not Invalid.
+31022	Invalid Parameter	payment_option: Invalid Parameter	Ensure that the payment_option parameter is not Invalid.
+31023	Invalid Parameter	card_number: Invalid Parameter	Ensure that the card_number parameter is not Invalid.
+31024	Invalid Parameter	expiry_month: Invalid Parameter	Ensure that the expiry_month parameter is not Invalid.
+31025	Invalid Parameter	expiry_year: Invalid Parameter	Ensure that the expiry_year parameter is not Invalid.
+31026	Invalid Parameter	cvv_number: Invalid Parameter	Ensure that the cvv_number parameter is not Invalid.
+31027	Invalid Parameter	issuing_bank: Invalid Parameter	Ensure that the issuing_bank parameter is not Invalid.
+31028	Invalid Parameter	emi_plan_id: Invalid Parameter	Ensure that the emi_plan_id parameter is not Invalid.
+31029	Invalid Parameter	emi_tenure_id: Invalid Parameter	Ensure that the emi_tenure_id parameter is not Invalid.
+31030	Invalid Parameter	order_uid: Invalid Parameter	Ensure that the order_uid parameter is not Invalid.
+31031	Invalid Parameter	mm_id: Invalid Parameter	Ensure that the mm_id parameter is not Invalid.
+31032	Invalid Parameter	otp: Invalid Parameter	Ensure that the otp parameter is not Invalid.
+31034	Invalid Parameter	Selected EMI facility is not valid for entered card	As verified by bank EMI transactions are not enabled on this card.

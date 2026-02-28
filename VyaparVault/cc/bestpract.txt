@@ -1,0 +1,40 @@
+Best Practices to Ensure Transaction Integrity
+The following Best Practices are guidelines only. It is recommended that you consult with security experts with experience in your web environment to ensure that your security is appropriate for your needs.
+
+Use a unique order number for each transaction attempt
+Our system does not validate your order number for uniqueness. If you send the same order id again it will be processed as a new transaction.
+
+We recommend that each transaction attempt should be assigned a unique transaction reference Id, but we do not enforce it. You may also consider appending a timestamp to the order number to help ensure that each one is unique. Our system will generate a unique transaction reference id for each transaction attempted on our system.
+
+Certain merchants wish to ensure that one order id may be attempted only once on the same day. In this case we recommend that you use the 'tid' parameter to send a unique identifier for each order id. This is an optional parameter. We have also provided a snippet of code in the integration kit to generate the value for this parameter. This tid parameter will be checked for uniqueness at the CCAvenue server only for 24 hours since its receipt. After this if you sent the tid again, it will be allowed.
+
+Store your unique order number for each transaction attempt
+Before sending a transaction to the Payment Server, you should store this unique order number with the order details in your database. The merchant order id is returned in the Transaction Response along with the CCAvenue system generated unique transaction reference id.
+
+The unique order number can be used for the Order status function to retrieve the transaction status of an order that was lost or missing.
+
+Check that the field values in the Response match those in the Request
+You should ensure that important fields such as the currency, the amount and the order ID in the Transaction Response match up with the values input in your database for the original Transaction Request.
+
+Validate the SSL certificate of the Payment Server
+It is highly recommended that you validate the SSL certificate of the Payment Server whenever you connect to the Payment Server. The Payment Server SSL certificate is issued by an industry standard Certificate Authority such as Verisign or Thawte whose root certificate should already be available in your web environment.
+
+Note: Please consult a web developer if you are not familiar with validating SSL certificates or exporting certificates from websites.
+
+Store your access code and secret key securely
+You must keep your access code and secret key stored securely. Do not store your secret within the source code of an ASP or JSP (or other) website page as it is common for web server vulnerabilities to be discovered where source code of such pages can be viewed.
+
+It is recommended to store your Secure Hash Secret in a secured database, or in a file that is not directly accessible by your web server and has suitable system security permissions.
+
+You should change your secret key regularly in accordance with your company's security policy, and any time when you believe that its security may have been compromised.
+
+You can change your secret key in Merchant Administration in the Setup menu option on the configuration Details page. For any assistance, please feel free to contact our technical support department.
+
+Use order status tracker
+Use the order status tracker to verify the status of a transaction as well as to find out the status of a lost transaction.
+
+If you are using the seamless integration, get PCI DSS certified
+If you are using seamless integration to take card information on your website before passing them on to the Payment Gateway, you must get PCI DSS certified. You must never store CVV information ever. Avoid storing card number and expiry date and if you must then ensure that they are properly encrypted.
+
+Use Good Password Security for Merchant Administration
+It is highly recommended that you choose a password that is difficult to guess and change your password regularly. A good password should be at least 8 characters and should contain a mix of capitals, numbers and special characters.

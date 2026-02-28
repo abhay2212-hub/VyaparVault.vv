@@ -1,0 +1,23 @@
+	
+Merchant ID
+This is the identifier for your CCAvenue merchant Account. You must send this with each request.
+
+merchant_id:	4418821	 
+ 
+Access Code
+This is the access code for your application. You must send this with each request.
+
+URL:https://www.vyaaparvaultpvt.in
+access_code:	AVRV87ML18CK40VRKC	 
+ 
+URL:https://vyaparvaultpvt.shop
+access_code:	AVYZ88NB25AR23ZYRA	 
+ 
+Working Key
+Below are the secret keys used for encrypting each request originating from your applications. Ensure you are using the correct key while encrypting requests from different URLs registered with us.
+
+URL:https://www.vyaaparvaultpvt.in
+Working key:	8BC9C48F24499DC712C3E5F50FAC41F9	    Regenerate
+ 
+URL:https://vyaparvaultpvt.shop
+Working key:	95826F9B151754F84DD0E601AA69BAA3
